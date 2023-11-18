@@ -7,7 +7,7 @@ fun main() {
     println("Игра 'Камень-Ножницы-Бумага'")
 
     while (true) {
-        // Генерация выбора компьютера
+
         val computerChoice = random.nextInt(3) + 1
 
         // Запрос выбора игрока
@@ -21,7 +21,7 @@ fun main() {
 
         println()
 
-        // Вывод выбора компьютера
+  
         println("Выбор компьютера:")
         when (computerChoice) {
             1 -> println("Камень")
@@ -31,7 +31,7 @@ fun main() {
 
         println()
 
-        // Определение победителя
+      
         if (playerChoice == computerChoice) {
             println("Ничья! Игра переигрывается.")
         } else if ((playerChoice == 1 && computerChoice == 2) ||
